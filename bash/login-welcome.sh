@@ -22,7 +22,9 @@ day=$(date +%a)
 ###############
 # Main        #
 ###############
-cat <<EOF
-Welcome to planet $hostname, "$title $myname!"
-It is $time on $day
-EOF
+#cat <<EOF
+
+outputMessage="Welcome to planet $hostname, $title $myname! It is $time on $day"
+cowsay "$outputMessage"
+
+#EOF

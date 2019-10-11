@@ -11,12 +11,12 @@ myString="kevin007"
 #[ $myString = $referenceString ] && echo "You guessed the password!" || echo "The password eludes you..."
 totalTries=1
 echo "Guess the password"
-while [ $totalTries -gt 0 ] && [ $totalTries -le 3 ]
+while [ $totalTries -le 3 ]
 do
 read password
 if [ $myString = $password ]
 then
-  echo "You have guessed the correct password and choice number is $totalTries."
+  echo "You have guessed the correct password"
 break
 elif [ $myString != $password ]
 then
